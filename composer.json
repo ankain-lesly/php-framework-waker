@@ -1,0 +1,24 @@
+{
+  "name": "devlee/php-mvc-framework",
+  "description": "Create a Fast, secure, efficient and support multiple and amazing....",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ankain Lesly",
+      "email": "leeleslyank@gmail.com",
+      "homepage": "https://www.letech-cg.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "twig/twig": "^3.7"
+  }
+}
