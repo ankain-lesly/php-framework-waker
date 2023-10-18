@@ -10,17 +10,25 @@ use App\Models\Post;
 
 class SiteController
 {
-  public Post $PostObj;
-  public Category $CategoryObj;
+  // public Post $PostObj;
+  // public Category $CategoryObj;
 
   public function __construct()
   {
-    $this->PostObj = new Post();
-    $this->CategoryObj = new Category();
+    // $this->PostObj = new Post();
+    // $this->CategoryObj = new Category();
   }
 
   public function Home(Request $req, Response $res)
   {
+    # Create
+    $posts = (new Post)->create([
+      'category_id' => 3,
+      'body' => "Build the ultimate experience",
+      'title' => "Some _cool title"
+    ]);
+
+    die('Test Generator Tablename');
     $res->render("home", title: "Welcome to blogger");
   }
 

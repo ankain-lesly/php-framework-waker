@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Loading App configurations
+ * 
+ * This comes with and our application object instance
+ * 
+ */
+require __DIR__ . '/config/bootstrap.php';
+// require_once __DIR__ . '/vendor/autoload.php';
+
+// $waker = $app->getWaker();
+
+$app->runWaker();

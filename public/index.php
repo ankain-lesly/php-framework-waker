@@ -1,5 +1,10 @@
 <?php
-include_once __DIR__ . "/../config/bootstrap.php";
+
+/**
+ * Loading app files
+ */
+require  __DIR__ . "/../config/bootstrap.php";
+require __DIR__ . "/../config/routes.php";
 
 $router->config('layoutTwo', '404');
 
@@ -8,7 +13,10 @@ $router->config('layoutTwo', '404');
  */
 
 
+
 // code here
+
+
 
 /**
  * Start The Application

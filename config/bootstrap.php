@@ -1,34 +1,36 @@
 <?php
 
+use Devlee\Framework\Waker\Application;
 use Devlee\PHPRouter\Router;
-use Wakeable\App\Runner;
-
 
 /**
- * Loading App Paths|Constants and Classes
+ * Load Application class files with composer autoload
  */
 include_once __DIR__ . "/../vendor/autoload.php";
+
+/**
+ * Loading App Paths|Constants
+ */
 include_once __DIR__ . "/paths.php";
 
 /**
- * Initializing App Router Package
+ * Initializing App Router Package from Devlee
+ * 
  * @var Router $router
  */
 $router = new Router(__DIR__);
 
 /**
- * Initializing and Booting Application with Runner
- * @var Runner $app
+ * Get and Set the Root Directory of the Application
+ * 
+ * @var string $root_path
  */
-$app = new Runner($router);
+
+$root_path = dirname(__DIR__);
 
 /**
- * Loading Application Custom Routes
- * @var array<string, mixed> $routes
+ * Initialize and Boot Application and Interfaces
+ * 
+ * @var Application $app
  */
-$routes = scandir(ROUTES_PATH);
-
-foreach ($routes as $route) {
-  if (is_dir($route)) continue;
-  include_once  ROUTES_PATH . '/' . $route;
-}
+$app = new Application($router, $root_path);
