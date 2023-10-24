@@ -24,13 +24,19 @@ class User extends Model
   protected string $role;
   protected string $added_on;
 
+  # HELPERS
+  protected string $confirm_password;
+
+  // Initializing Validation Schema
   public function validate(array $data)
   {
     $schema = new ObjectSchema($this);
+    $schema->setValidationRules($this->rules());
+
     return $schema->validate($data);
   }
 
-
+  // Model Validation Rules
   public function rules(): array
   {
     return [
