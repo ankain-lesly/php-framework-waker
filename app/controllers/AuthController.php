@@ -3,11 +3,12 @@
 namespace App\Controllers;
 
 use App\Models\User;
-use Devlee\PHPMVCCore\Services\Library;
-use Devlee\PHPMVCCore\Services\Session;
-use Devlee\PHPRouter\Request;
-use Devlee\PHPRouter\Response;
-use Devlee\PHPRouter\Router;
+use Devlee\WakerORM\Services\Library;
+use Devlee\WakerORM\Services\Session;
+use Devlee\WakerRouter\Request;
+use Devlee\WakerRouter\Response;
+use Devlee\WakerRouter\Router;
+
 
 /**
  * Generated Controller
@@ -41,8 +42,10 @@ class AuthController
     $data['password'] = $user->hashString($data['password']);
     $data['user_id'] = Library::generateToken();
 
+    unset($data['confirm_password']);
     if ($user->create($data)) {
-      $res->redirect('/');
+      $this->setUser($data);
+      $res->redirect('/?signup-on=native');
     }
 
     $res->render('signup', "Create Account");
@@ -105,7 +108,6 @@ class AuthController
       'user_id' => $data['user_id'],
       'role' => $data['role'] ?? 1,
     );
-    // $this->Session->set('user', $user_data);
     $session->set('user', $user_data);
   }
 }

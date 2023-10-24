@@ -5,9 +5,10 @@ namespace App\Controllers;
 use App\Models\Post;
 use App\Models\Topic;
 use App\Models\User;
-use Devlee\PHPMVCCore\Services\Session;
-use Devlee\PHPRouter\Request;
-use Devlee\PHPRouter\Response;
+
+use Devlee\WakerORM\Services\Session;
+use Devlee\WakerRouter\Request;
+use Devlee\WakerRouter\Response;
 
 /**
  * Generated Controller

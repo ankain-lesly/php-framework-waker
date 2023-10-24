@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Devlee\PHPMVCCore\DB\Model;
+use Devlee\WakerORM\DB\Model;
 
 /**
  * Generated Model

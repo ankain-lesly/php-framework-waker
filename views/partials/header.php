@@ -1,6 +1,6 @@
 <?php
 
-use Devlee\PHPMVCCore\Services\Session;
+use Devlee\WakerORM\Services\Session;
 
 $user = (new Session)->get('user');
 

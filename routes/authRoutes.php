@@ -1,7 +1,7 @@
 <?php
 
 use App\Controllers\AuthController;
-use Devlee\PHPRouter\Router;
+use Devlee\WakerRouter\Router;
 
 // use Devlee\PHPRouter\Router;
 

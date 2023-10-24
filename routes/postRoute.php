@@ -1,7 +1,7 @@
 <?php
 
-use Devlee\PHPRouter\Router;
 use App\Controllers\MainController;
+use Devlee\WakerRouter\Router;
 
 // use Devlee\PHPRouter\Router;
 

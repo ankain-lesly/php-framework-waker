@@ -5,11 +5,11 @@ namespace App\Controllers;
 use App\Middlewares\AuthMiddleware;
 use App\Models\Post;
 use App\Models\Topic;
-use Devlee\PHPMVCCore\Services\Library;
-use Devlee\PHPMVCCore\Services\Session;
-use Devlee\PHPRouter\Request;
-use Devlee\PHPRouter\Response;
-use Devlee\PHPRouter\Router;
+use Devlee\WakerORM\Services\Library;
+use Devlee\WakerORM\Services\Session;
+use Devlee\WakerRouter\Request;
+use Devlee\WakerRouter\Response;
+use Devlee\WakerRouter\Router;
 
 /**
  * Generated Controller

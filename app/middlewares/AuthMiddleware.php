@@ -4,7 +4,7 @@ namespace App\Middlewares;
 
 use App\Models\User;
 use Devlee\Framework\Waker\Services\Middlewares\BaseMiddleware;
-use Devlee\PHPMVCCore\Services\Session;
+use Devlee\WakerORM\Services\Session;
 
 class AuthMiddleware extends BaseMiddleware
 {

@@ -2,8 +2,7 @@
 
 namespace App\Models;
 
-use Devlee\PHPMVCCore\DB\Model;
-
+use Devlee\WakerORM\DB\Model;
 
 // Posts
 class Post extends Model

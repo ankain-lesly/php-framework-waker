@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-use Devlee\PHPRouter\Request;
-use Devlee\PHPRouter\Response;
-use Devlee\PHPRouter\Router;
 use App\Models\Category;
 use App\Models\Post;
+use Devlee\WakerRouter\Request;
+use Devlee\WakerRouter\Response;
+use Devlee\WakerRouter\Router;
 
 class SiteController
 {

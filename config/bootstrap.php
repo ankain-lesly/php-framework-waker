@@ -1,7 +1,7 @@
 <?php
 
 use Devlee\Framework\Waker\Application;
-use Devlee\PHPRouter\Router;
+use Devlee\WakerRouter\Router;
 
 /**
  * Load Application class files with composer autoload

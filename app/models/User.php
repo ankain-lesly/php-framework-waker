@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use Devlee\PHPMVCCore\DB\Model;
-use Devlee\PHPMVCCore\Services\ObjectSchema;
+use Devlee\WakerORM\DB\Model;
+use Devlee\WakerORM\Services\ObjectSchema;
 
 /**
  * Generated Model
@@ -25,7 +25,7 @@ class User extends Model
   protected string $added_on;
 
   # HELPERS
-  protected string $confirm_password;
+  // protected string $confirm_password;
 
   // Initializing Validation Schema
   public function validate(array $data)
