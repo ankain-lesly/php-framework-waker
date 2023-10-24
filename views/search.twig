@@ -1,0 +1,64 @@
+<section class="hero section-p">
+  <div class="container-x">
+    <h2>Search</h2>
+    <br>
+    <form>
+      <div class="form-group flex gap-2">
+        <input type="search" name="search" required>
+        <button class="btn danger">>></button>
+      </div>
+    </form>
+  </div>
+</section>
+<div class="hr-line"></div>
+
+{# posts #}
+{% if posts %}
+<section class="hero section-p">
+  <div class="container-x">
+    <h3>Posts</h3>
+    <br>
+    <div class="flex start column wrap gap-2">
+      {# card #}
+      {% for post in posts %}
+      <div class="p-2" style="border: 2px solid #ccc; border-radius:10px">
+        <a href="/read/{{ post.slug }}">
+          <h3>{{post.title}}</h3>
+          <p>{{post.body}}</p>
+        </a>
+        <br><br>
+        <a href="/author/{{post.user_id}}" class="bg-danger clr-white font-small p-x">By {{post.name}}</a>
+        <a href="/author/{{post.topic_id}}" class="bg-success clr-white font-small p-x">In {{post.topic}}</a>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if topics %}
+<section class="hero section-p">
+  <div class="container-x">
+    <h3>Topics</h3>
+    <br>
+    <div class="flex gap-2 wrap">
+      {% for topic in topics %}
+      <div class="border-text-muted rounded-3 p-2">
+        <p href="/topic/{{topic.topic_id}}" class="font-small">{{topic.topic}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if not posts and not topics %}
+<section class="hero section-p">
+  <div class="container-x">
+    <div class="p-2 flex-1 bg-danger clr-light" style="border-radius:10px">
+      <p>No Articles found</p>
+    </div>
+  </div>
+</section>
+{% endif %}

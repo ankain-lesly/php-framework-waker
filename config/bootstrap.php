@@ -15,10 +15,11 @@ include_once __DIR__ . "/paths.php";
 
 /**
  * Initializing App Router Package from Devlee
+ * Object requires path to view|templates folder
  * 
  * @var Router $router
  */
-$router = new Router(__DIR__);
+$router = new Router(VIEWS_PATH);
 
 /**
  * Get and Set the Root Directory of the Application

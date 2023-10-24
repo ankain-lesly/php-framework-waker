@@ -1,0 +1,129 @@
+.custom_select {
+  position: relative;
+  flex: 1 1;
+
+  .custome_select_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: hsla(120, 100%, 25%, 0.171);
+    transition: all 1s ease;
+  }
+  .select_btn {
+    cursor: pointer;
+    background-color: $clr-white-l;
+    margin: 0;
+  }
+  .selected_info {
+    display: none;
+  }
+  &.active .data_container {
+    display: block;
+  }
+  .data_container {
+    display: none;
+  }
+  .select_content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: form-anim 500ms ease forwards;
+  }
+
+  @keyframes form-anim {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .select_content {
+    .options,
+    .select_search {
+      border-radius: 5px;
+      box-shadow: $bs-sec;
+      background: $clr-bg;
+      border: 2px solid #ffffff55;
+    }
+    .select_search {
+      position: relative;
+    }
+  }
+  input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: $clr-success !important;
+  }
+  input {
+    margin: 0 !important;
+    color: $clr-white;
+    padding-left: 30px;
+  }
+  .select_icon {
+    transition: transform 400ms ease;
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+  .search_icon {
+    position: absolute;
+    left: 0.5em;
+    color: hsla($hsl-clr-white, 0.671);
+  }
+  .search-close {
+    opacity: 0.45;
+    position: absolute;
+    right: 0.5em;
+    width: 20px;
+    height: 20px;
+    background-color: $clr-danger;
+    color: $clr-bg;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .options {
+    max-height: 150px;
+    overflow: auto;
+    padding: 10px;
+    margin-top: 3px;
+    li {
+      padding: 6px 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 1px solid;
+      border-radius: 5px;
+      margin-bottom: 0.5em;
+      color: $clr-white;
+
+      &.selected,
+      &:hover {
+        background: var(--clr-danger);
+        color: $clr-bg;
+      }
+    }
+  }
+  .label {
+    min-width: max-content;
+  }
+  .option_text {
+    font-size: 0.8rem;
+  }
+  #null-value {
+    padding: 10px;
+    background: #333;
+    color: $clr-white;
+    text-align: center;
+    font-size: 0.89rem;
+    border-radius: 10px;
+  }
+}

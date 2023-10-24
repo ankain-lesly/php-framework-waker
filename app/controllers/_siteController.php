@@ -21,14 +21,6 @@ class SiteController
 
   public function Home(Request $req, Response $res)
   {
-    # Create
-    $posts = (new Post)->create([
-      'category_id' => 3,
-      'body' => "Build the ultimate experience",
-      'title' => "Some _cool title"
-    ]);
-
-    die('Test Generator Tablename');
     $res->render("home", title: "Welcome to blogger");
   }
 
@@ -64,8 +56,8 @@ class SiteController
   {
     Router::setLayout('LayoutOne');
 
-    $data = $this->PostObj->findAllJoin(
-      [$this->CategoryObj],
+    $data = (new Post())->findAllJoin(
+      [new Category()],
       ['category_id']
     );
 
@@ -76,8 +68,8 @@ class SiteController
     Router::setLayout('LayoutOne');
     $id = $req->params('post_id');
 
-    $data = $this->PostObj->findOneJoin(
-      [$this->CategoryObj],
+    $data = (new Post)->findOneJoin(
+      [new Category()],
       ['category_id'],
       ['id' => $id]
     );

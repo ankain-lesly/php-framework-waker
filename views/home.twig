@@ -1,8 +1,60 @@
-<h1>Our Home</h1>
+<section class="hero section-p">
+  <div class="container-x">
+    <h2>Blogger</h2>
+    <br>
+    <div style="overflow: auto;">
+      <div class="flex gap-2">
+        {% for topic in topics %}
+        <div class="border-text-muted rounded-3 p-2">
+          <p href="/topic/{{topic.topic_id}}" class="font-small">{{topic.topic}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<div class="hr-line"></div>
 
-<p>{{message}}</p>
-<hr>
-<h2>{{user.name}}</h2>
-<p>{{user.email}}</p>
-<small>{{user.mobile}}</small>
-<hr>
+{# posts #}
+<section class="hero section-p">
+  <div class="container-x">
+    <h3>Recent posts</h3>
+    <br>
+    <div class="flex start column wrap gap-2">
+
+      {# card #}
+      {% for post in posts %}
+      <div class="p-2" style="border: 2px solid #ccc; border-radius:10px">
+        <a href="/read/{{ post.slug }}">
+          <h3>{{post.title}}</h3>
+          <p>{{post.body}}</p>
+        </a>
+        <br><br>
+        <a href="/author/{{post.user_id}}" class="bg-danger clr-white font-small p-x">by {{post.name}}</a>
+      </div>
+      {% else %}
+      <div class="p-2 flex-1 bg-danger clr-light" style="border-radius:10px">
+        <p>No Articles found</p>
+      </div>
+      {% endfor %}
+
+      <br>
+      <div class="p-2 flex-me gap-2">
+        {% if paginator.cur_page > 1 %}
+        <a href="?page={{paginator.cur_page - 1}}">Prev</a>
+        {% else %}
+        <span></span>
+        {% endif %}
+
+        <span>
+          <<>>
+        </span>
+
+        {% if paginator.cur_page < paginator.pages %} <a href="?page={{paginator.cur_page + 1}}">Next</a>
+          {% else %}
+          <span></span>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
