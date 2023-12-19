@@ -630,38 +630,7 @@ h3 {
 }
 .fs-small {
   font-size: smaller;
-}
-/* utils */
-.detail {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
-  padding: 5px 10px;
-  font-size: smaller;
-  border-radius: 5px;
-  // font-weight: bold;
-
-  &.success {
-    background-color: hsla(var(--hsl-clr-success), 0.152);
-    color: var(--clr-success);
-  }
-  &.warning {
-    background-color: hsla(var(--hsl-clr-warning), 0.152);
-    color: var(--clr-warning);
-  }
-  &.danger {
-    background-color: hsla(var(--hsl-clr-danger), 0.152);
-    color: var(--clr-danger);
-    // color:hsl(0, 100%, 50%);
-  }
-  &.primary {
-    background-color: hsla(var(--hsl-clr-primary), 0.152);
-    color: var(--clr-primary);
-  }
-  &.muted {
-    background-color: hsla(var(--hsl-clr-text-muted), 0.152);
-    color: var(--clr-bg);
-  }
-}
+.il
 .w-full {
   width: 100%;
 }

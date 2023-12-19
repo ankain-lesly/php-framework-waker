@@ -1,4 +1,0 @@
-# ErrorTree Options
-
-- theme
--

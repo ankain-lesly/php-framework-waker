@@ -4,8 +4,235 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "475218768061e50c80fdc8a060617f85",
+    "content-hash": "97e0c451fa7871887940e8f0dc78cd92",
     "packages": [
+        {
+            "name": "devlee/error-tree",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ankain-lesly/php-error-tree.git",
+                "reference": "c7d9672b87ac475c8ca2434199296655d5820146"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ankain-lesly/php-error-tree/zipball/c7d9672b87ac475c8ca2434199296655d5820146",
+                "reference": "c7d9672b87ac475c8ca2434199296655d5820146",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devlee\\ErrorTree\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ankain Lesly",
+                    "email": "leeleslyank@gmail.com",
+                    "homepage": "https://www.letech-cg.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Handle and Display PHP errors and exceptions in your application with clean error message display",
+            "keywords": [
+                "errors",
+                "exceptions",
+                "handle errors"
+            ],
+            "support": {
+                "issues": "https://github.com/ankain-lesly/php-error-tree/issues",
+                "source": "https://github.com/ankain-lesly/php-error-tree/tree/v1.0.0"
+            },
+            "time": "2023-10-24T23:28:43+00:00"
+        },
+        {
+            "name": "devlee/waker-cli",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ankain-lesly/php-waker-cli.git",
+                "reference": "20597f0679b741ab83175adceefee6a84c7c8985"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ankain-lesly/php-waker-cli/zipball/20597f0679b741ab83175adceefee6a84c7c8985",
+                "reference": "20597f0679b741ab83175adceefee6a84c7c8985",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devlee\\WakerCLI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ankain Lesly",
+                    "email": "leeleslyank@gmail.com",
+                    "homepage": "https://www.letech-cg.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "A Quick and easy cli managing tool for php console application",
+            "keywords": [
+                "orm",
+                "php framework",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/ankain-lesly/php-waker-cli/issues",
+                "source": "https://github.com/ankain-lesly/php-waker-cli/tree/v1.0.0"
+            },
+            "time": "2023-10-24T23:25:11+00:00"
+        },
+        {
+            "name": "devlee/waker-framework",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ankain-lesly/php-waker-framework.git",
+                "reference": "a9ce0d50b82bc93768a2e906dd336944e99fcb3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ankain-lesly/php-waker-framework/zipball/a9ce0d50b82bc93768a2e906dd336944e99fcb3d",
+                "reference": "a9ce0d50b82bc93768a2e906dd336944e99fcb3d",
+                "shasum": ""
+            },
+            "require": {
+                "devlee/error-tree": "^1.0",
+                "devlee/waker-cli": "^1.0",
+                "devlee/waker-orm": "^2.0",
+                "devlee/waker-router": "^2.0",
+                "twig/twig": "^3.7",
+                "vlucas/phpdotenv": "^5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devlee\\Framework\\Waker\\": "waker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ankain Lesly",
+                    "email": "leeleslyank@gmail.com",
+                    "homepage": "https://www.letech-cg.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "A Solid MINI PHP MVC Framework: Waker",
+            "keywords": [
+                "orm",
+                "php framework",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/ankain-lesly/php-waker-framework/issues",
+                "source": "https://github.com/ankain-lesly/php-waker-framework/tree/v1.1.0"
+            },
+            "time": "2023-10-25T00:38:30+00:00"
+        },
+        {
+            "name": "devlee/waker-orm",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ankain-lesly/php-waker-orm.git",
+                "reference": "e9ccd1e18c11625e203084fcfd2476014f1df9ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ankain-lesly/php-waker-orm/zipball/e9ccd1e18c11625e203084fcfd2476014f1df9ec",
+                "reference": "e9ccd1e18c11625e203084fcfd2476014f1df9ec",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devlee\\WakerORM\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ankain Lesly",
+                    "email": "leeleslyank@gmail.com",
+                    "homepage": "https://www.letech-cg.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "A PHP Object Relational Mapper and  a Data Abstraction layer for Relational Databases",
+            "keywords": [
+                "orm",
+                "relation mapper"
+            ],
+            "support": {
+                "issues": "https://github.com/ankain-lesly/php-waker-orm/issues",
+                "source": "https://github.com/ankain-lesly/php-waker-orm/tree/v2.0.0"
+            },
+            "time": "2023-10-24T20:42:27+00:00"
+        },
+        {
+            "name": "devlee/waker-router",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ankain-lesly/php-waker-router.git",
+                "reference": "fd2c61b4af3bd253cfe92b360f8eccdc3360efb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ankain-lesly/php-waker-router/zipball/fd2c61b4af3bd253cfe92b360f8eccdc3360efb1",
+                "reference": "fd2c61b4af3bd253cfe92b360f8eccdc3360efb1",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Devlee\\WakerRouter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ankain Lesly",
+                    "email": "leeleslyank@gmail.com",
+                    "homepage": "https://www.letech-cg.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "A Fast, secure, efficient and simple PHP router package",
+            "keywords": [
+                "response request",
+                "router",
+                "views"
+            ],
+            "support": {
+                "issues": "https://github.com/ankain-lesly/php-waker-router/issues",
+                "source": "https://github.com/ankain-lesly/php-waker-router/tree/v2.0.0"
+            },
+            "time": "2023-10-24T23:04:09+00:00"
+        },
         {
             "name": "graham-campbell/result-type",
             "version": "v1.1.1",

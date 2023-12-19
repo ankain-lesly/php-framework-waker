@@ -8,7 +8,6 @@ use Devlee\WakerRouter\Router;
 $HomeRoutes = Router::useRoute();
 
 $HomeRoutes->get('/', [MainController::class, "Index"]);
-$HomeRoutes->get('/search', [MainController::class, "Search"]);
-
-// AddRoute
+$HomeRoutes->get('/about', [MainController::class, "About"]);
+ 
 // RouteGroup

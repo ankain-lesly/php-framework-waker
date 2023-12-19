@@ -1,4 +1,12 @@
 /vendor
-/CHANGES.log
+# /CHANGES.log
 /.env
 /_index-MVC-chema.php
+/_dev
+
+routes/route-mesh.php
+00_FA
+public/fonts
+
+storage/cache/
+storage/logs/

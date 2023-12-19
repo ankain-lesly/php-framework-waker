@@ -1,6 +1,6 @@
 {
-  "name": "devlee/php-mvc-framework",
-  "description": "Create a Fast, secure, efficient and support multiple and amazing....",
+  "name": "devlee/waker-framework-main",
+  "description": "A Solid mini PHP MVC Framework: Waker",
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -18,7 +18,10 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "vlucas/phpdotenv": "^5.5",
-    "twig/twig": "^3.7"
+    "devlee/waker-framework": "^1.1"
+  },
+  "scripts": {
+    "foo": "bars",
+    "run-app": "cd public && @php -S localhost:3500"
   }
 }
