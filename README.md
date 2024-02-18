@@ -2,6 +2,8 @@
 
 A Solid mini PHP MVC Framework: Waker
 
+![waker for php](./public/static/images/waker-gear.png)
+
 ## Table of contents
 
 - [Overview](#Overview-and-Features)

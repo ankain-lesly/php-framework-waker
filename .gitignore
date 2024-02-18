@@ -6,6 +6,7 @@ node_modules
 .env
 module-chema.php
 /_dev
+/public/static/scss-dev/
 
 routes/route-mesh.php
 00_FA

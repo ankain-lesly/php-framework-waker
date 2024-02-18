@@ -9,9 +9,10 @@
 </head>
 
 <body>
-  <!-- {{@partial_header}} -->
+  <!-- Include Partial >> Header -->
   <?php include_once __DIR__ . '/../partials/header.php'; ?>
   {{content}}
+  <!-- Include Partial >> Header -->
 </body>
 
 </html>
