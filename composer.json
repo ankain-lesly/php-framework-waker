@@ -1,8 +1,9 @@
 {
-  "name": "devlee/waker-framework-main",
+  "name": "devlee/waker-framework",
   "description": "A Solid mini PHP MVC Framework: Waker",
   "type": "library",
   "license": "MIT",
+  "resource-link": "https://github.com/ankain-lesly/php-framework-waker",
   "autoload": {
     "psr-4": {
       "App\\": "app/"
@@ -13,12 +14,13 @@
       "name": "Ankain Lesly",
       "email": "leeleslyank@gmail.com",
       "homepage": "https://www.letech-cg.com",
+      "portfolio": "https://lesly-chuo.letech-cg.com",
       "role": "Developer"
     }
   ],
   "minimum-stability": "stable",
   "require": {
-    "devlee/waker-framework": "^1.1"
+    "devlee/waker-framework": "^2.1"
   },
   "scripts": {
     "foo": "bars",

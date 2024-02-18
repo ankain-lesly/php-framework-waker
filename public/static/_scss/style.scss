@@ -1,2 +1,25 @@
 /*Asset Styles*/
 @import "index";
+
+// Page Styles
+.gear {
+  max-width: 450px;
+  margin: 2rem auto;
+}
+
+section.main {
+  text-align: center;
+
+  h3 {
+    margin-block: 2rem;
+    font-weight: normal;
+  }
+
+  a {
+    color: $clr-primary;
+    display: inline-block;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    padding-inline: 1rem;
+  }
+}

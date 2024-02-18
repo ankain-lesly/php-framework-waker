@@ -1,12 +1,17 @@
-/vendor
-# /CHANGES.log
-/.env
-/_index-MVC-chema.php
+.vscode/
+
+vendor
+node_modules
+
+.env
+module-chema.php
 /_dev
 
 routes/route-mesh.php
 00_FA
-public/fonts
+public/_fonts
 
 storage/cache/
 storage/logs/
+
+debuger/

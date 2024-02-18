@@ -1,0 +1,28 @@
+{
+  "name": "devlee/waker-framework",
+  "description": "A Solid mini PHP MVC Framework: Waker",
+  "version": "2.1.0",
+  "main": "",
+  "scripts": {
+    "build-css": "",
+    "minify-css": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PHP",
+    "MVC",
+    "Framework",
+    "Waker"
+  ],
+  "authors": [
+    {
+      "name": "Ankain Lesly",
+      "email": "leeleslyank@gmail.com",
+      "homepage": "https://www.letech-cg.com",
+      "portfolio": "https://lesly-chuo.letech-cg.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {}
+}
