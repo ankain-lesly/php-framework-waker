@@ -58,3 +58,5 @@ This frameworks runs mainly on four solid package. All this package are availabl
 ### Waker Terminal Commands
 
 ## About Author
+
+---
