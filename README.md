@@ -45,6 +45,12 @@ This frameworks runs mainly on four solid package. All this package are availabl
 
 ### Installation
 
+Installation
+
+```shell
+composer require devlee/waker-framework
+```
+
 ### Structure and MVC
 
 ### Loading-Templates
